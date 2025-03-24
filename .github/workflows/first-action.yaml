@@ -7,4 +7,6 @@ jobs:
       - name: print greeting  # Fixed: no hyphen in step name, added space after -
         run: echo "Hoa ngoc le hung"
       - name: print goodbye  # Fixed: added space after -
-        run: echo "done - bye"
+        run: | 
+          echo "done - bye"
+          echo "ccc123"
