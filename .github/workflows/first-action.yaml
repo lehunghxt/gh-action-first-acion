@@ -2,9 +2,9 @@ name: First work flow
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest  # Fixed typo: "lastest" -> "latest"
     steps:
-      -name: prit greetiing
+      - name: print greeting  # Fixed: no hyphen in step name, added space after -
         run: echo "Hoa ngoc le hung"
-      -name: print goodbye
+      - name: print goodbye  # Fixed: added space after -
         run: echo "done - bye"
